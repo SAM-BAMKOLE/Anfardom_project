@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Anfardom Forum</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="min-h-[100vh] text-base"
+    style="background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('/assets/farm-animals.webp') no-repeat center center / cover; background-attachment: fixed;">
+    <div class="flex relative">
+        <aside class="hidden md:block w-[30%] lg:w-[20%] h-[100vh] py-5 px-5 bg-white shadow-lg sticky top-0 left-0">
+            <header class="mb-7">
+                <a href="#"
+                    class="py-5 px-5 block text-center rounded-3xl font-semibold bg-green text-white hover:bg-opacity-85 transition-colors">New
+                    Discussion</a>
+            </header>
+            <ul class="flex flex-col font-medium gap-2">
+                <li class="">
+                    <a href="#" class="capitalize py-2 px-5 bg-gray-50 rounded-2xl flex items-center gap-2 text-green"
+                        aria-current="true">
+                        <div class="w-[10px] h-6 rounded-lg bg-green"></div>All threads
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#"
+                        class="capitalize py-2 px-5 hover:bg-gray-50 rounded-2xl text-dark flex items-center gap-2 transition-colors group hover:text-green">
+                        <div
+                            class="w-[10px] h-6 rounded-lg bg-green bg-opacity-20 group-hover:bg-opacity-100 transition-colors">
+                        </div>
+                        Channels
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#"
+                        class="capitalize py-2 px-5 hover:bg-gray-50 rounded-2xl text-dark flex items-center gap-2 transition-colors group hover:text-green">
+                        <div
+                            class="w-[10px] h-6 rounded-lg bg-green bg-opacity-20 group-hover:bg-opacity-100 transition-colors">
+                        </div>
+                        Popular This week
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="md:w-[70%] lg:w-[60%] min-h-[100vh] mx-auto">
+            <header
+                class="py-8 px-6 bg-white lg:bg-transparent mb-3 font-semibold flex flex-col gap-3 md:flex-row md:items-center lg:justify-between">
+                <div class="flex gap-4">
+                    <select name="filter_by_popularity" id=""
+                        class="hover:bg-opacity-80 transition capitalize py-2 px-6 bg-dark shadow-lg rounded-3xl text-white cursor-pointer min-w-[100px] focus:outline-none">
+                        <option value="">Latest</option>
+                    </select>
+                    <select name="filter_by_category" id=""
+                        class="hover:bg-opacity-80 transition capitalize py-2 px-6 bg-dark shadow-lg rounded-3xl text-white cursor-pointer min-w-[100px] focus:outline-none">
+                        <option value="">All</option>
+                    </select>
+                </div>
+                <form action=""
+                    class="hover:bg-opacity-80 transition capitalize py-2 pr-6 bg-dark shadow-lg rounded-3xl text-white cursor-pointer min-w-[100px] focus:outline-none flex items-center">
+                    <span class="material-symbols-outlined text-white px-3 text-opacity-60">search</span>
+                    <input type="text" class="bg-transparent border-o outline-none placeholder:text-opacity-60"
+                        placeholder="Bring your search...">
+                </form>
+            </header>
+            <section class="mx-2 space-y-2">
+                <a href="#"
+                    class="flex w-full rounded-2xl border-l-[6px] border-transparent bg-white hover:bg-gray-50 transition-colors px-3 py-5 md:p-5 shadow-1 gap-5">
+                    <div class="w-[80px] h-[80px] rounded-md bg-dark aspect-square overflow-hidden"><img
+                            src="/assets/rabbit.jpg" class="w-full object-cover" alt="">
+                    </div>
+                    <div class="w-full">
+                        <header class="flex items-center justify-between mb-3">
+                            <div class="flex flex-col gap-3">
+                                <p class="uppercase md:hidden font-medium text-brown">Santos</p>
+                                <h3 class="text-lg font-bold text-black hover:underline">
+                                    Attention needed...
+                                </h3>
+                            </div>
+                            <div class="flex gap-4 items-center font-medium">
+                                <p class="items-center text-dark gap-1 hidden md:flex"><span
+                                        class="material-symbols-outlined">visibility</span> 75</p>
+                                <p class="flex items-center text-dark gap-1"><span
+                                        class="material-symbols-outlined">comment</span> 7</p>
+                                <button
+                                    class="hidden md:block capitalize text-xs py-[5px] px-10 bg-transparent rounded-2xl text-red-600 border border-red-600 hover:text-white hover:bg-red-600 transition-colors">
+                                    Laravel
+                                </button>
+                            </div>
+                        </header>
+                        <p class="text-base text-dark">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when
+                        </p>
+                        <h5 class="text-xs font-medium mt-2 text-gray-800"><span class="text-green">JimmyHayes</span>
+                            replied 7
+                            minutes ago.
+                        </h5>
+                    </div>
+                </a>
+                <a href="#"
+                    class="flex w-full rounded-2xl border-l-[6px] border-transparent bg-white hover:bg-gray-50 transition-colors px-3 py-5 md:p-5 shadow-1 gap-5">
+                    <div class="w-[80px] h-[80px] rounded-md bg-dark aspect-square overflow-hidden"><img
+                            src="/assets/rabbit.jpg" class="w-full object-cover" alt="">
+                    </div>
+                    <div class="w-full">
+                        <header class="flex items-center justify-between mb-3">
+                            <div class="flex flex-col gap-3">
+                                <p class="uppercase md:hidden font-medium text-brown">Santos</p>
+                                <h3 class="text-lg font-bold text-black hover:underline">
+                                    Attention needed...
+                                </h3>
+                            </div>
+                            <div class="flex gap-4 items-center font-medium">
+                                <p class="items-center text-dark gap-1 hidden md:flex"><span
+                                        class="material-symbols-outlined">visibility</span> 75</p>
+                                <p class="flex items-center text-dark gap-1"><span
+                                        class="material-symbols-outlined">comment</span> 7</p>
+                                <button
+                                    class="hidden md:block capitalize text-xs py-[5px] px-10 bg-transparent rounded-2xl text-red-600 border border-red-600 hover:text-white hover:bg-red-600 transition-colors">
+                                    Laravel
+                                </button>
+                            </div>
+                        </header>
+                        <p class="text-base text-dark">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when
+                        </p>
+                        <h5 class="text-xs font-medium mt-2 text-gray-800"><span class="text-green">JimmyHayes</span>
+                            replied 7
+                            minutes ago.
+                        </h5>
+                    </div>
+                </a>
+                <a href="#"
+                    class="flex w-full rounded-2xl border-l-[6px] border-transparent bg-white hover:bg-gray-50 transition-colors px-3 py-5 md:p-5 shadow-1 gap-5">
+                    <div class="w-[80px] h-[80px] rounded-md bg-dark aspect-square overflow-hidden"><img
+                            src="/assets/rabbit.jpg" class="w-full object-cover" alt="">
+                    </div>
+                    <div class="w-full">
+                        <header class="flex items-center justify-between mb-3">
+                            <div class="flex flex-col gap-3">
+                                <p class="uppercase md:hidden font-medium text-brown">Santos</p>
+                                <h3 class="text-lg font-bold text-black hover:underline">
+                                    Attention needed...
+                                </h3>
+                            </div>
+                            <div class="flex gap-4 items-center font-medium">
+                                <p class="items-center text-dark gap-1 hidden md:flex"><span
+                                        class="material-symbols-outlined">visibility</span> 75</p>
+                                <p class="flex items-center text-dark gap-1"><span
+                                        class="material-symbols-outlined">comment</span> 7</p>
+                                <button
+                                    class="hidden md:block capitalize text-xs py-[5px] px-10 bg-transparent rounded-2xl text-red-600 border border-red-600 hover:text-white hover:bg-red-600 transition-colors">
+                                    Laravel
+                                </button>
+                            </div>
+                        </header>
+                        <p class="text-base text-dark">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when
+                        </p>
+                        <h5 class="text-xs font-medium mt-2 text-gray-800"><span class="text-green">JimmyHayes</span>
+                            replied 7
+                            minutes ago.
+                        </h5>
+                    </div>
+                </a>
+                <a href="#"
+                    class="flex w-full rounded-2xl border-l-[6px] border-transparent bg-white hover:bg-gray-50 transition-colors px-3 py-5 md:p-5 shadow-1 gap-5">
+                    <div class="w-[80px] h-[80px] rounded-md bg-dark aspect-square overflow-hidden"><img
+                            src="/assets/rabbit.jpg" class="w-full object-cover" alt="">
+                    </div>
+                    <div class="w-full">
+                        <header class="flex items-center justify-between mb-3">
+                            <div class="flex flex-col gap-3">
+                                <p class="uppercase md:hidden font-medium text-brown">Santos</p>
+                                <h3 class="text-lg font-bold text-black hover:underline">
+                                    Attention needed...
+                                </h3>
+                            </div>
+                            <div class="flex gap-4 items-center font-medium">
+                                <p class="items-center text-dark gap-1 hidden md:flex"><span
+                                        class="material-symbols-outlined">visibility</span> 75</p>
+                                <p class="flex items-center text-dark gap-1"><span
+                                        class="material-symbols-outlined">comment</span> 7</p>
+                                <button
+                                    class="hidden md:block capitalize text-xs py-[5px] px-10 bg-transparent rounded-2xl text-red-600 border border-red-600 hover:text-white hover:bg-red-600 transition-colors">
+                                    Laravel
+                                </button>
+                            </div>
+                        </header>
+                        <p class="text-base text-dark">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when
+                        </p>
+                        <h5 class="text-xs font-medium mt-2 text-gray-800"><span class="text-green">JimmyHayes</span>
+                            replied 7
+                            minutes ago.
+                        </h5>
+                    </div>
+                </a>
+                <a href="#"
+                    class="flex w-full rounded-2xl border-l-[6px] border-transparent bg-white hover:bg-gray-50 transition-colors px-3 py-5 md:p-5 shadow-1 gap-5">
+                    <div class="w-[80px] h-[80px] rounded-md bg-dark aspect-square overflow-hidden"><img
+                            src="/assets/rabbit.jpg" class="w-full object-cover" alt="">
+                    </div>
+                    <div class="w-full">
+                        <header class="flex items-center justify-between mb-3">
+                            <div class="flex flex-col gap-3">
+                                <p class="uppercase md:hidden font-medium text-brown">Santos</p>
+                                <h3 class="text-lg font-bold text-black hover:underline">
+                                    Attention needed...
+                                </h3>
+                            </div>
+                            <div class="flex gap-4 items-center font-medium">
+                                <p class="items-center text-dark gap-1 hidden md:flex"><span
+                                        class="material-symbols-outlined">visibility</span> 75</p>
+                                <p class="flex items-center text-dark gap-1"><span
+                                        class="material-symbols-outlined">comment</span> 7</p>
+                                <button
+                                    class="hidden md:block capitalize text-xs py-[5px] px-10 bg-transparent rounded-2xl text-red-600 border border-red-600 hover:text-white hover:bg-red-600 transition-colors">
+                                    Laravel
+                                </button>
+                            </div>
+                        </header>
+                        <p class="text-base text-dark">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when
+                        </p>
+                        <h5 class="text-xs font-medium mt-2 text-gray-800"><span class="text-green">JimmyHayes</span>
+                            replied 7
+                            minutes ago.
+                        </h5>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <aside class="hidden lg:block h-[100vh] py-5 px-3 w-[20%] sticky top-0 right-0 space-y-3">
+            <article class="rounded-3xl aspect-square bg-dark relative flex flex-col justify-between px-5"
+                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/rabbit.jpg') no-repeat center center / cover;">
+                <div class=""></div>
+                <div class="mb-3 flex justify-center"><a href="#"
+                        class="capitalize py-3 px-5 w-full block text-center rounded-2xl font-semibold bg-white text-dark hover:bg-opacity-95 transition-colors">Join
+                        Anfardom today</a></div>
+            </article>
+            <article class="rounded-3xl aspect-square bg-dark relative flex flex-col justify-between px-5"
+                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/rabbit.jpg') no-repeat center center / cover;">
+                <div class=""></div>
+                <div class="mb-3 flex justify-center"><a href="#"
+                        class="capitalize py-3 px-5 w-full block text-center rounded-2xl font-semibold bg-white text-dark hover:bg-opacity-95 transition-colors">Join
+                        Anfardom today</a></div>
+            </article>
+        </aside>
+    </div>
+    <div class="hidden relative">
+        <div class="w-[40%] bg-black h-[100dvh] sticky top-0 left-0"></div>
+        <div class="w-[60%] bg-white h-[150dvh] ml-auto"></div>
+    </div>
+    <footer class="min-h-[100dvh]"></footer>
+    <div
+        class="md:hidden fixed bottom-5 right-3 w-[50px] aspect-square flex items-center justify-center text-white bg-brown rounded-full text-2xl">
+        <span class="material-symbols-outlined">add</span>
+    </div>
+</body>
+
+</html>
